@@ -1,0 +1,26 @@
+{
+  "name": "etst2",
+  "version": "1.0.0",
+  "description": "Hyperfy running locally",
+  "main": "main.js",
+  "author": "Bitmato LLC",
+  "license": "GPL v3",
+  "private": true,
+  "scripts": {
+    "start": "electron .",
+    "build": "electron-builder"
+  },
+  "devDependencies": {
+    "electron": "^34.2.0",
+    "electron-builder": "^25.1.8"
+  },
+  "dependencies": {
+    "yargs": "^17.7.2"
+  },
+  "build": {
+    "extraResources": {
+      "from": "settings.json",
+      "to": "settings.json"
+    }
+  }
+}
